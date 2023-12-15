@@ -6,14 +6,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body style="background-color:black">
-        <nav class="navbar" style="background-color:#00a65a">
-        <a class="navbar-brand text-white">My Book recommender</a>
-            <ul class="nav navbar-nav text-white">
-            <li class="text-white"><a class="text-white" href="/">Home</a></li>
-            <li class="text-white"><a class="text-white" href="/recommend">Recommend</a></li>
-            <li class="text-white"><a>Contact</a></li>
-        </ul>
-        </nav>
+<style>
+        .navbar {
+            background-color: #00a65a;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            margin-left: 10px;
+        }
+                .card {
+            margin-top: 20px;
+            border: 2px solid #00a65a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar-buttons{
+            margin-right: 15px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            width: 100%;
+
+
+        }
+
+        .card-body {
+            text-align: center;
+        }
+</style>
+<nav class="navbar">
+    <a class="navbar-brand">My Book Recommender</a>
+    <div class="navbar-buttons">
+        <a class="btn btn-light" href="/">Home</a>
+        <a class="btn btn-light" href="/recommend">Recommend</a>
+
+    </div>
+</nav>
+
  <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -40,3 +74,89 @@
 
 </body>
 </html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Books Recommender System</title>-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+<!--    <style>-->
+<!--        body {-->
+<!--            background-color: black;-->
+<!--            color: white;-->
+<!--        }-->
+
+<!--        .navbar {-->
+<!--            background-color: #00a65a;-->
+<!--        }-->
+
+<!--        .navbar-brand, .nav-link {-->
+<!--            color: white !important;-->
+<!--        }-->
+
+<!--        .container {-->
+<!--            margin-top: 20px;-->
+<!--        }-->
+
+<!--        h1 {-->
+<!--            font-size: 50px;-->
+<!--        }-->
+
+<!--        .card {-->
+<!--            margin-top: 20px;-->
+<!--            border: 2px solid #00a65a;-->
+<!--            border-radius: 10px;-->
+<!--            overflow: hidden;-->
+<!--            transition: transform 0.3s ease-in-out;-->
+<!--        }-->
+
+<!--        .card:hover {-->
+<!--            transform: scale(1.05);-->
+<!--        }-->
+
+<!--        .card-img-top {-->
+<!--            width: 100%;-->
+<!--            height: 200px;-->
+<!--            object-fit: cover;-->
+<!--        }-->
+
+<!--        .card-body {-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<nav class="navbar">-->
+<!--    <a class="navbar-brand">My Book Recommender</a>-->
+<!--    <div class="navbar-buttons">-->
+<!--        <a class="btn btn-light" href="/">Home</a>-->
+<!--        <a class="btn btn-light" href="/recommend">Recommend</a>-->
+<!--        <a class="btn btn-light" href="#">Contact</a>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-12">-->
+<!--            <h1>Top 50 Books</h1>-->
+<!--        </div>-->
+
+<!--        {% for i in range(book_name|length) %}-->
+<!--            <div class="col-md-3">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <img class="card-img-top" src="{{ image[i] }}" alt="Book Cover">-->
+<!--                        <p>{{ book_name[i] }}</p>-->
+<!--                        <h4>{{ author[i] }}</h4>-->
+<!--                        <h4>Votes - {{ votes[i] }}</h4>-->
+<!--                        <h4>Ratings - {{ rating[i] }}</h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
