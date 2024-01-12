@@ -10,5 +10,6 @@
    - pt.pkl
    - similarity_scores.pkl
 6. Run app.py.
-![Screenshot (190)](https://github.com/PiyushiKulkarni/Book_Recommendation_System/assets/112570663/22d2ef89-fd27-43f9-904f-dbe496c9044a)
-![Screenshot (191)](https://github.com/PiyushiKulkarni/Book_Recommendation_System/assets/112570663/793e47ba-a857-4af5-9125-68f7cbca5351)
+
+![Screenshot (190)](https://github.com/PiyushiKulkarni/Book_Recommendation_System/assets/112570663/03c30e57-f8c5-4e68-bdfe-3eb05f519315)
+![Screenshot (191)](https://github.com/PiyushiKulkarni/Book_Recommendation_System/assets/112570663/31915d82-d81b-4a89-a271-f6f350ebc47c)
